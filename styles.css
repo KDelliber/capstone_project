@@ -51,7 +51,8 @@ main {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white;
+    background: linear-gradient(to right, black, silver); /* Gradient background */
+    color: white; /* Ensure text is visible on gradient background */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -60,6 +61,7 @@ section {
 section:hover {
     transform: translateY(-5px);
     background-color: #f1f1f1; /* Change background on hover */
+    color: #333; /* Revert text color on hover for visibility */
 }
 
 h2 {
