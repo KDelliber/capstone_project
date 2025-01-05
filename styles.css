@@ -34,10 +34,12 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition */
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #ff6347; /* Change color on hover */
+    transform: scale(1.1); /* Scale up slightly on hover */
 }
 
 main {
@@ -92,13 +94,12 @@ footer {
 a {
     color: #007bff;
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Add transition */
 }
 
 a:hover {
-    color: #0056b3;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
-    text-decoration: underline;
+    color: #ff6347; /* Change color on hover */
+    transform: scale(1.1); /* Scale up slightly on hover */
 }
 
 /* Button Styles */
@@ -110,12 +111,12 @@ a:hover {
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition */
 }
 
 .button:hover {
     background-color: #0056b3;
-    transform: translateY(-3px);
+    transform: translateY(-3px); /* Scale effect on hover */
 }
 
 /* Additional Styling */
