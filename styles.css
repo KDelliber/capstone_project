@@ -6,13 +6,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
-    color: #e0e0e0;
+    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e); /* Black to dark gray gradient */
+    color: #e0e0e0; /* Light gray text color */
 }
 
 header {
-    background: #4a4a4a;
-    color: #e0e0e0;
+    background: #4a4a4a; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text color */
     padding: 60px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -21,8 +21,8 @@ header {
 header h1 {
     margin: 0;
     font-size: 3em;
-    font-family: 'Cinzel', serif;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-family: 'Cinzel', serif; /* Fantasy-style font for the header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
 }
 
 nav a {
-    color: #e0e0e0;
+    color: #e0e0e0; /* Light gray text color */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -38,8 +38,8 @@ nav a {
 }
 
 nav a:hover {
-    color: #c0c0c0;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color: #d5a021; /* Gold color on hover */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Glowing effect */
 }
 
 main {
@@ -51,19 +51,14 @@ main {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(34, 34, 34, 0.8);
+    background: rgba(34, 34, 34, 0.8); /* Darker background for sections */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-section:hover {
-    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
 h2 {
-    color: #d5a021;
-    font-family: 'Cinzel', serif;
+    color: #d5a021; /* Gold color for headers */
+    font-family: 'Cinzel', serif; /* Fantasy-style font for headers */
     font-size: 2em;
     margin-bottom: 15px;
     border-bottom: 2px solid #d5a021;
@@ -78,7 +73,7 @@ h2 {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for images */
 }
 
 ul {
@@ -91,8 +86,8 @@ li {
 }
 
 footer {
-    background-color: #4a4a4a;
-    color: #e0e0e0;
+    background-color: #4a4a4a; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text color */
     text-align: center;
     padding: 20px 0;
     position: relative;
@@ -102,14 +97,14 @@ footer {
 }
 
 a {
-    color: #d5a021;
+    color: #d5a021; /* Gold color for links */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #c0c0c0;
-    transform: scale(1.1);
+    color: #c0c0c0; /* Light gray on hover */
+    transform: scale(1.1); /* Slight scale on hover */
 }
 
 /* Button Styles */
@@ -117,28 +112,28 @@ a:hover {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #4a4a4a;
-    color: #e0e0e0;
+    background-color: #4a4a4a; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text color */
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background-color: #6a6a6a;
-    transform: translateY(-3px);
+    background-color: #6a6a6a; /* Lighter gray on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
 }
 
 /* Additional Styling */
 code {
-    background-color: #2e2e2e;
+    background-color: #2e2e2e; /* Dark gray background for code */
     padding: 5px;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 pre {
-    background-color: #2e2e2e;
+    background-color: #2e2e2e; /* Dark gray background for pre */
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
