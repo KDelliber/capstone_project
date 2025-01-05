@@ -1,0 +1,84 @@
+/* styles.css */
+
+/* General styles for the entire site */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Specific styles for the Capstone Project page */
+section#capstone-project h2 {
+    color: #007bff;
+}
+
+section#capstone-project ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section#capstone-project ul li {
+    margin: 10px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+section#capstone-project ul li::before {
+    content: "✔️";
+    position: absolute;
+    left: -20px;
+    color: #007bff;
+}
