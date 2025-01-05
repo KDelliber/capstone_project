@@ -36,6 +36,7 @@ nav a:hover {
 
 main {
     padding: 20px;
+    margin-bottom: 50px; /* Added margin for footer */
 }
 
 section {
@@ -55,30 +56,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-}
-
-/* Specific styles for the Capstone Project page */
-section#capstone-project h2 {
-    color: #007bff;
-}
-
-section#capstone-project ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-section#capstone-project ul li {
-    margin: 10px 0;
-    padding-left: 10px;
-    position: relative;
-}
-
-section#capstone-project ul li::before {
-    content: "✔️";
-    position: absolute;
-    left: -20px;
-    color: #007bff;
+    position: relative; /* Changed from fixed to relative */
+    bottom: 0;
 }
