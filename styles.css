@@ -6,7 +6,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background: linear-gradient(to right, black, silver); /* Add gradient to body */
     color: #333;
 }
 
@@ -51,8 +51,7 @@ main {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background: linear-gradient(to right, black, silver); /* Gradient background */
-    color: white; /* Ensure text is visible on gradient background */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for sections */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -60,8 +59,7 @@ section {
 
 section:hover {
     transform: translateY(-5px);
-    background-color: #f1f1f1; /* Change background on hover */
-    color: #333; /* Revert text color on hover for visibility */
+    background-color: rgba(240, 240, 240, 0.8); /* Change background on hover */
 }
 
 h2 {
