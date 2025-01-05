@@ -2,18 +2,17 @@
 
 /* General styles for the entire site */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Garamond', 'Georgia', serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, black, silver);
-    color: #333;
+    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e);
+    color: #e0e0e0;
 }
 
 header {
-    background-image: url('path-to-your-background-image.jpg');
-    background-size: cover;
-    color: white;
+    background: #4a4a4a;
+    color: #e0e0e0;
     padding: 60px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -22,6 +21,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 3em;
+    font-family: 'Cinzel', serif;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -30,16 +30,16 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav a:hover {
-    color: #ff6347;
-    transform: scale(1.1);
+    color: #c0c0c0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 main {
@@ -51,23 +51,22 @@ main {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background: rgba(34, 34, 34, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
 section:hover {
     transform: translateY(-5px);
-    background-color: rgba(240, 240, 240, 0.8);
 }
 
 h2 {
-    color: #007bff;
-    font-family: 'Merriweather', serif;
+    color: #d5a021;
+    font-family: 'Cinzel', serif;
     font-size: 2em;
     margin-bottom: 15px;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #d5a021;
     padding-bottom: 5px;
 }
 
@@ -78,8 +77,8 @@ h2 {
 .diagram img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 ul {
@@ -92,24 +91,24 @@ li {
 }
 
 footer {
-    background-color: #007bff;
-    color: white;
+    background-color: #4a4a4a;
+    color: #e0e0e0;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
 
 a {
-    color: #007bff;
+    color: #d5a021;
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #ff6347;
+    color: #c0c0c0;
     transform: scale(1.1);
 }
 
@@ -118,28 +117,28 @@ a:hover {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #007bff;
-    color: white;
+    background-color: #4a4a4a;
+    color: #e0e0e0;
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background-color: #0056b3;
+    background-color: #6a6a6a;
     transform: translateY(-3px);
 }
 
 /* Additional Styling */
 code {
-    background-color: #f4f4f9;
+    background-color: #2e2e2e;
     padding: 5px;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 pre {
-    background-color: #f4f4f9;
+    background-color: #2e2e2e;
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
