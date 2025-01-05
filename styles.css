@@ -11,16 +11,18 @@ body {
 }
 
 header {
-    background-color: #007bff;
+    background-image: url('path-to-your-background-image.jpg'); /* Add a background image */
+    background-size: cover;
     color: white;
-    padding: 20px 0;
+    padding: 60px 0; /* Increase padding for a hero effect */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
 }
 
 nav {
@@ -50,16 +52,18 @@ section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 section:hover {
     transform: translateY(-5px);
+    background-color: #f1f1f1; /* Change background on hover */
 }
 
 h2 {
     color: #007bff;
-    font-size: 1.8em;
+    font-family: 'Merriweather', serif; /* Use a stylish font for headings */
+    font-size: 2em;
     margin-bottom: 15px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
@@ -88,12 +92,30 @@ footer {
 a {
     color: #007bff;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
     color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow effect */
     text-decoration: underline;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
 }
 
 /* Additional Styling */
