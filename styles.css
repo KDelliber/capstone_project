@@ -6,15 +6,15 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, black, silver); /* Add gradient to body */
+    background: linear-gradient(to right, black, silver);
     color: #333;
 }
 
 header {
-    background-image: url('path-to-your-background-image.jpg'); /* Add a background image */
+    background-image: url('path-to-your-background-image.jpg');
     background-size: cover;
     color: white;
-    padding: 60px 0; /* Increase padding for a hero effect */
+    padding: 60px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -22,7 +22,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 3em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Add text shadow */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 nav {
@@ -34,12 +34,12 @@ nav a {
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
-    transition: color 0.3s ease, transform 0.3s ease; /* Add transition */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 nav a:hover {
-    color: #ff6347; /* Change color on hover */
-    transform: scale(1.1); /* Scale up slightly on hover */
+    color: #ff6347;
+    transform: scale(1.1);
 }
 
 main {
@@ -51,7 +51,7 @@ main {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background for sections */
+    background: rgba(255, 255, 255, 0.8);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
@@ -59,16 +59,27 @@ section {
 
 section:hover {
     transform: translateY(-5px);
-    background-color: rgba(240, 240, 240, 0.8); /* Change background on hover */
+    background-color: rgba(240, 240, 240, 0.8);
 }
 
 h2 {
     color: #007bff;
-    font-family: 'Merriweather', serif; /* Use a stylish font for headings */
+    font-family: 'Merriweather', serif;
     font-size: 2em;
     margin-bottom: 15px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
+}
+
+.diagram {
+    margin-bottom: 20px;
+}
+
+.diagram img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 ul {
@@ -94,12 +105,12 @@ footer {
 a {
     color: #007bff;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease; /* Add transition */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #ff6347; /* Change color on hover */
-    transform: scale(1.1); /* Scale up slightly on hover */
+    color: #ff6347;
+    transform: scale(1.1);
 }
 
 /* Button Styles */
@@ -111,12 +122,12 @@ a:hover {
     color: white;
     border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
     background-color: #0056b3;
-    transform: translateY(-3px); /* Scale effect on hover */
+    transform: translateY(-3px);
 }
 
 /* Additional Styling */
