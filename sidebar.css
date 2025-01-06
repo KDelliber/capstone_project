@@ -10,6 +10,7 @@
     display: block; /* Ensure the sidebar is always displayed */
     font-size: 14px; /* Smaller font size to fit all items */
     overflow-y: auto; /* Add vertical scrollbar */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 .sidebar a {
@@ -24,4 +25,3 @@
     background-color: #ddd;
     color: black;
 }
-/* Sidebar Styles */ .sidebar { height: 100%; width: 200px; position: fixed; top: 50px; /* Adjust based on the height of the top navigation */ left: 0; background-color: #f8f9fa; padding-top: 20px; display: block; /* Ensure the sidebar is always displayed */ font-size: 14px; /* Smaller font size to fit all items */ overflow-y: auto; /* Add vertical scrollbar */ } .sidebar a { padding: 10px 15px; text-decoration: none; font-size: 14px; /* Smaller font size to match the sidebar */ color: #333; display: block; } .sidebar a:hover { background-color: #ddd; color:
