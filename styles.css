@@ -6,13 +6,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #1a1a1a, #2e2e2e); /* Black to dark gray gradient */
-    color: #e0e0e0; /* Light gray text color */
+    background: linear-gradient(to bottom, #2c2c54, #3a3a72); /* Dark purple to darker blue gradient */
+    color: #f0e6d6; /* Light cream text color */
 }
 
 header {
-    background: #4a4a4a; /* Dark gray background */
-    color: #e0e0e0; /* Light gray text color */
+    background: #423d71; /* Dark purple background */
+    color: #f0e6d6; /* Light cream text color */
     padding: 60px 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@ nav {
 }
 
 nav a {
-    color: #e0e0e0; /* Light gray text color */
+    color: #f0e6d6; /* Light cream text color */
     text-decoration: none;
     margin: 0 15px;
     font-weight: bold;
@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #d5a021; /* Gold color on hover */
+    color: #ffd700; /* Gold color on hover */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Glowing effect */
 }
 
@@ -51,27 +51,27 @@ main {
 section {
     margin-bottom: 30px;
     padding: 20px;
-    background: rgba(34, 34, 34, 0.8); /* Darker background for sections */
+    background: rgba(66, 61, 113, 0.8); /* Slightly lighter dark purple for sections */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     transition: background-color 0.3s ease-in-out; /* Only color change on hover */
 }
 
 section:hover {
-    background-color: rgba(54, 54, 54, 0.8); /* Change background on hover */
+    background-color: rgba(88, 81, 141, 0.8); /* Change background to lighter purple on hover */
 }
 
 h2 {
-    color: #d5a021; /* Gold color for headers */
+    color: #ffd700; /* Gold color for headers */
     font-family: 'Cinzel', serif; /* Fantasy-style font for headers */
     font-size: 2em;
     margin-bottom: 15px;
-    border-bottom: 2px solid #d5a021;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 5px;
 }
 
 h3 {
-    color: #d5a021; /* Gold color for sub-headers */
+    color: #ffd700; /* Gold color for sub-headers */
     font-family: 'Cinzel', serif; /* Fantasy-style font for sub-headers */
     margin-top: 20px;
 }
@@ -97,8 +97,8 @@ li {
 }
 
 footer {
-    background-color: #4a4a4a; /* Dark gray background */
-    color: #e0e0e0; /* Light gray text color */
+    background-color: #423d71; /* Dark purple background */
+    color: #f0e6d6; /* Light cream text color */
     text-align: center;
     padding: 20px 0;
     position: relative;
@@ -108,13 +108,13 @@ footer {
 }
 
 a {
-    color: #d5a021; /* Gold color for links */
+    color: #ffd700; /* Gold color for links */
     text-decoration: none;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #c0c0c0; /* Light gray on hover */
+    color: #fffacd; /* Light yellow on hover */
     transform: scale(1.1); /* Slight scale on hover */
 }
 
@@ -123,28 +123,28 @@ a:hover {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #4a4a4a; /* Dark gray background */
-    color: #e0e0e0; /* Light gray text color */
+    background-color: #423d71; /* Dark purple background */
+    color: #f0e6d6; /* Light cream text color */
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .button:hover {
-    background-color: #6a6a6a; /* Lighter gray on hover */
+    background-color: #5c548f; /* Lighter purple on hover */
     transform: translateY(-3px); /* Slight lift on hover */
 }
 
 /* Additional Styling */
 code {
-    background-color: #2e2e2e; /* Dark gray background for code */
+    background-color: #5c548f; /* Dark purple background for code */
     padding: 5px;
     border-radius: 4px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 pre {
-    background-color: #2e2e2e; /* Dark gray background for pre */
+    background-color: #5c548f; /* Dark purple background for pre */
     padding: 10px;
     border-radius: 4px;
     overflow-x: auto;
