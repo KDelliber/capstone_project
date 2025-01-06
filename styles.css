@@ -54,6 +54,11 @@ section {
     background: rgba(34, 34, 34, 0.8); /* Darker background for sections */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: background-color 0.3s ease-in-out; /* Only color change on hover */
+}
+
+section:hover {
+    background-color: rgba(54, 54, 54, 0.8); /* Change background on hover */
 }
 
 h2 {
@@ -87,4 +92,54 @@ li {
 
 footer {
     background-color: #4a4a4a; /* Dark gray background */
-    color: #
+    color: #e0e0e0; /* Light gray text color */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    color: #d5a021; /* Gold color for links */
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #c0c0c0; /* Light gray on hover */
+    transform: scale(1.1); /* Slight scale on hover */
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4a4a4a; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #6a6a6a; /* Lighter gray on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+/* Additional Styling */
+code {
+    background-color: #2e2e2e; /* Dark gray background for code */
+    padding: 5px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    background-color: #2e2e2e; /* Dark gray background for pre */
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+}
