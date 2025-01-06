@@ -7,7 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    background-color: #F08080; /* Light Coral */
+    background: linear-gradient(to right, #87CEFA, #FFB6C1); /* Gradient background */
     color: #333333;
     margin: 0;
     padding: 0;
