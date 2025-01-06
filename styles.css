@@ -21,11 +21,12 @@ body {
 .top-nav a {
     color: white;
     text-decoration: none;
-    padding: 14px 20px;
-    border: 2px solid #004080; /* Border to create box effect */
+    padding: 10px 15px; /* Adjusted padding for more box-like appearance */
+    margin: 5px; /* Adding space between the boxes */
+    border: 2px solid white; /* Border to create box effect */
     border-radius: 5px; /* Rounded corners for the boxes */
     background-color: #0056b3; /* Same background color for the boxes */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .top-nav a:hover {
