@@ -49,6 +49,7 @@ body {
     font-size: 14px; /* Smaller font size to fit all items */
     overflow-y: auto; /* Enable vertical scrollbar */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on Chrome */
 }
 
 .sidebar a {
