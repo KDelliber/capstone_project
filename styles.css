@@ -1,14 +1,19 @@
 /* styles.css */
 
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     background-color: #f8f9fa;
     color: #343a40;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
+/* Navigation Styles */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -27,25 +32,34 @@ nav ul li a {
     color: #ffffff;
     padding: 10px 15px;
     display: block;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
     background-color: #495057;
 }
 
+/* Container Styles */
 .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 20px auto;
     background: #ffffff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
+/* Typography */
 h1, h2 {
     color: #343a40;
+    font-weight: 600;
 }
 
+.section {
+    margin-bottom: 20px;
+}
+
+/* Link Styles */
 ul {
     list-style-type: none;
     padding: 0;
@@ -58,8 +72,27 @@ ul li {
 a {
     color: #007bff;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #0056b3;
+}
+
+a:visited {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
 }
