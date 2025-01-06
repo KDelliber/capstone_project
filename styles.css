@@ -38,34 +38,26 @@ body {
 /* Sidebar Navigation Styles */
 .sidebar {
     max-height: calc(100vh - 50px); /* Adjust based on the height of the top navigation */
-    width: 200px;
+    width: 220px;
     position: fixed;
     top: 50px; /* Adjust based on the height of the top navigation */
     left: 0;
     background-color: #f8f9fa;
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    font-size: 12px; /* Smaller font size to fit all items */
+    font-size: 14px; /* Slightly larger font size */
     overflow-y: auto; /* Enable vertical scrollbar */
     overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
-.sidebar .link-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    border-right: 2px solid #e0e0e0; /* Add a border to the right for better separation */
 }
 
 .sidebar a {
-    width: 48%; /* Two links per row */
-    margin-bottom: 10px;
+    padding: 10px 15px;
     text-decoration: none;
-    font-size: 12px; /* Smaller font size to match the sidebar */
     color: #333;
     display: block;
-    flex-shrink: 0;
-    text-align: center; /* Center-align the text */
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
 }
 
 .sidebar a:hover {
@@ -75,7 +67,7 @@ body {
 
 /* Main content area */
 main {
-    margin-left: 220px; /* Adjust based on the width of the sidebar */
+    margin-left: 240px; /* Adjust based on the width of the sidebar */
     padding: 60px 20px 20px 20px; /* Adding padding to top to account for fixed top navigation */
 }
 
@@ -119,5 +111,15 @@ h1, h2 {
     }
     nav ul li {
         margin: 5px 0;
+    }
+    .sidebar {
+        width: 100%; /* Make sidebar full width on small screens */
+        height: auto; /* Adjust height */
+        position: relative; /* Remove fixed position */
+        border-right: none; /* Remove right border */
+    }
+    main {
+        margin-left: 0; /* Remove left margin on small screens */
+        padding-top: 20px; /* Adjust padding */
     }
 }
