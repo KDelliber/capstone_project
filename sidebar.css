@@ -14,13 +14,21 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
+.sidebar .link-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .sidebar a {
-    padding: 10px 15px;
+    width: 48%; /* Two links per row */
+    margin-bottom: 10px;
     text-decoration: none;
     font-size: 12px; /* Smaller font size to match the sidebar */
     color: #333;
     display: block;
     flex-shrink: 0;
+    text-align: center; /* Center-align the text */
 }
 
 .sidebar a:hover {
