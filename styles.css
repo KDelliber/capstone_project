@@ -70,6 +70,12 @@ h2 {
     padding-bottom: 5px;
 }
 
+h3 {
+    color: #d5a021; /* Gold color for sub-headers */
+    font-family: 'Cinzel', serif; /* Fantasy-style font for sub-headers */
+    margin-top: 20px;
+}
+
 .diagram {
     margin-bottom: 20px;
 }
