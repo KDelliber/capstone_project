@@ -40,6 +40,10 @@ nav ul li a:hover {
     color: #ffd700;
 }
 
+nav ul li a:visited {
+    color: #ffd700; /* Lighter color for visited links */
+}
+
 /* Container Styles */
 .container {
     max-width: 800px;
@@ -85,7 +89,7 @@ a:hover {
 }
 
 a:visited {
-    color: #004080;
+    color: #004080; /* Ensure visited links in the body are readable */
 }
 
 /* Button Styles */
