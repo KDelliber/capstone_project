@@ -1,50 +1,65 @@
-/* styles.css */
-
-/* Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
-
 /* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to right, #ADD8E6, #87CEFA); /* Light Blue Gradient */
-    color: #333333;
     margin: 0;
     padding: 0;
 }
 
-/* Navigation Styles */
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Top Navigation Styles */
+.top-nav {
     display: flex;
-    justify-content: center;
-    background-color: #0056b3;
-    margin: 0;
+    justify-content: space-around;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
-nav ul li {
-    margin: 0 10px;
-}
-
-nav ul li a {
+.top-nav a {
+    color: white;
     text-decoration: none;
-    color: #ffffff;
+    padding: 14px 20px;
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Sidebar Navigation Styles */
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 50px; /* Adjust based on the height of the top navigation */
+    left: 0;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+    display: none; /* Initially hidden */
+}
+
+.sidebar a {
     padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
     display: block;
-    transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: #004080;
-    color: #ffd700;
+.sidebar a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
-nav ul li a:visited {
-    color: #ffd700; /* Lighter color for visited links */
+/* Main content area */
+main {
+    margin-left: 220px; /* Adjust based on the width of the sidebar */
+    padding: 60px 20px 20px 20px; /* Adding padding to top to account for fixed top navigation */
 }
 
-/* Container Styles */
 .container {
     max-width: 800px;
     margin: 20px auto;
@@ -72,57 +87,4 @@ h1, h2 {
     border-bottom: 2px solid #e0e0e0;
     padding-bottom: 10px;
     margin-bottom: 20px;
-}
-
-/* Link Styles */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-a {
-    color: #0056b3;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: #004080;
-}
-
-a:visited {
-    color: #004080; /* Ensure visited links in the body are readable */
-}
-
-/* Button Styles */
-button {
-    background-color: #0056b3;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #004080;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .container {
-        margin: 10px;
-        padding: 15px;
-    }
-    nav ul {
-        flex-direction: column;
-    }
-    nav ul li {
-        margin: 5px 0;
-    }
 }
