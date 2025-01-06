@@ -1,151 +1,67 @@
 /* styles.css */
 
-/* General styles for the entire site */
 body {
-    font-family: 'Garamond', 'Georgia', serif;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #121212;
+    color: #e0e0e0;
     margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #2c2c54, #3a3a72); /* Dark purple to darker blue gradient */
-    color: #f0e6d6; /* Light cream text color */
-}
-
-header {
-    background: #423d71; /* Dark purple background */
-    color: #f0e6d6; /* Light cream text color */
-    padding: 60px 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3em;
-    font-family: 'Cinzel', serif; /* Fantasy-style font for the header */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Subtle text shadow */
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    color: #f0e6d6; /* Light cream text color */
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-}
-
-nav a:hover {
-    color: #ffd700; /* Gold color on hover */
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Glowing effect */
-}
-
-main {
-    padding: 40px 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-}
-
-section {
-    margin-bottom: 30px;
     padding: 20px;
-    background: rgba(66, 61, 113, 0.8); /* Slightly lighter dark purple for sections */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #1f1f1f;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    padding: 10px 15px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #ffd700;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #1c1c1c;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
-    transition: background-color 0.3s ease-in-out; /* Only color change on hover */
+    border: 2px solid #333;
 }
 
-section:hover {
-    background-color: rgba(88, 81, 141, 0.8); /* Change background to lighter purple on hover */
-}
-
-h2 {
-    color: #ffd700; /* Gold color for headers */
-    font-family: 'Cinzel', serif; /* Fantasy-style font for headers */
-    font-size: 2em;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #ffd700;
-    padding-bottom: 5px;
-}
-
-h3 {
-    color: #ffd700; /* Gold color for sub-headers */
-    font-family: 'Cinzel', serif; /* Fantasy-style font for sub-headers */
-    margin-top: 20px;
-}
-
-.diagram {
-    margin-bottom: 20px;
-}
-
-.diagram img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for images */
+h1, h2 {
+    color: #ffd700;
 }
 
 ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
 }
 
-li {
+ul li {
     margin-bottom: 10px;
 }
 
-footer {
-    background-color: #423d71; /* Dark purple background */
-    color: #f0e6d6; /* Light cream text color */
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-}
-
 a {
-    color: #ffd700; /* Gold color for links */
+    color: #ffd700;
     text-decoration: none;
-    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 a:hover {
-    color: #fffacd; /* Light yellow on hover */
-    transform: scale(1.1); /* Slight scale on hover */
-}
-
-/* Button Styles */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px 0;
-    background-color: #423d71; /* Dark purple background */
-    color: #f0e6d6; /* Light cream text color */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.button:hover {
-    background-color: #5c548f; /* Lighter purple on hover */
-    transform: translateY(-3px); /* Slight lift on hover */
-}
-
-/* Additional Styling */
-code {
-    background-color: #5c548f; /* Dark purple background for code */
-    padding: 5px;
-    border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-pre {
-    background-color: #5c548f; /* Dark purple background for pre */
-    padding: 10px;
-    border-radius: 4px;
-    overflow-x: auto;
+    text-decoration: underline;
 }
