@@ -1,6 +1,6 @@
 /* Sidebar Styles */
 .sidebar {
-    height: 100%;
+    max-height: calc(100vh - 50px); /* Adjust based on the height of the top navigation */
     width: 200px;
     position: fixed;
     top: 50px; /* Adjust based on the height of the top navigation */
