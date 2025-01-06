@@ -8,7 +8,7 @@
     background-color: #f8f9fa;
     padding-top: 20px;
     display: block; /* Ensure the sidebar is always displayed */
-    font-size: 14px; /* Smaller font size to fit all items */
+    font-size: 12px; /* Smaller font size to fit all items */
     overflow-y: auto; /* Add vertical scrollbar */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
@@ -16,7 +16,7 @@
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 14px; /* Smaller font size to match the sidebar */
+    font-size: 12px; /* Smaller font size to match the sidebar */
     color: #333;
     display: block;
 }
