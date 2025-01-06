@@ -5,43 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capstone Project - Week 1</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            display: flex;
-        }
-        nav {
-            width: 200px;
-            background-color: #f4f4f4;
-            padding: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin-bottom: 10px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #0056b3;
-        }
-        main {
-            flex: 1;
-            padding: 20px;
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="#project-overview">Project Overview</a></li>
-            <li><a href="#field-analysis">Field Analysis</a></li>
-            <li><a href="#documents">Documents</a></li>
-        </ul>
-    </nav>
+    <div class="top-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="#" id="capstone-link">Capstone Project</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <a href="#project-overview">Project Overview</a>
+        <a href="#field-analysis">Field Analysis</a>
+        <a href="#documents">Documents</a>
+    </div>
 
     <main>
         <div class="container">
@@ -70,5 +47,11 @@
     <footer>
         <!-- Footer content -->
     </footer>
+
+    <script>
+        document.getElementById('capstone-link').addEventListener('click', function() {
+            document.getElementById('sidebar').style.display = 'block';
+        });
+    </script>
 </body>
 </html>
