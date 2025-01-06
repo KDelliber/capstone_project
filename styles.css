@@ -4,6 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 /* Top Navigation Styles */
@@ -56,6 +57,7 @@ body {
 
 /* Main content area */
 main {
+    flex: 1;
     margin-left: 220px; /* Adjust based on the width of the sidebar */
     padding: 60px 20px 20px 20px; /* Adding padding to top to account for fixed top navigation */
 }
