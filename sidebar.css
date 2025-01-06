@@ -9,6 +9,7 @@
     padding-top: 20px;
     display: block; /* Ensure the sidebar is always displayed */
     font-size: 14px; /* Smaller font size to fit all items */
+    overflow-y: auto; /* Add vertical scrollbar */
 }
 
 .sidebar a {
