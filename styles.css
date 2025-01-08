@@ -1,3 +1,11 @@
+/* Importing Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+/* Box Model Reset */
+* {
+    box-sizing: border-box;
+}
+
 /* General Styles */
 body {
     font-family: 'Open Sans', sans-serif;
@@ -10,7 +18,7 @@ body {
 .top-nav {
     display: flex;
     justify-content: space-around;
-    background-color: #0056b3; /* New color for the top navigation bar */
+    background-color: #0056b3;
     padding: 10px;
     position: fixed;
     width: 100%;
@@ -21,18 +29,18 @@ body {
 .top-nav a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px; /* Adjusted padding for more box-like appearance */
-    margin: 5px; /* Adding space between the boxes */
-    border: 2px solid white; /* Border to create box effect */
-    border-radius: 5px; /* Rounded corners for the boxes */
-    background-color: #0056b3; /* Same background color for the boxes */
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effect */
+    padding: 10px 15px;
+    margin: 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #0056b3;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .top-nav a:hover {
     background-color: #004080;
     color: #ffd700;
-    border-color: #ffd700; /* Change border color on hover */
+    border-color: #ffd700;
 }
 
 /* Sidebar Navigation Styles */
@@ -40,25 +48,25 @@ body {
     height: 100%;
     width: 200px;
     position: fixed;
-    top: 50px; /* Adjust based on the height of the top navigation */
+    top: 50px;
     left: 0;
     background-color: #f8f9fa;
     padding-top: 20px;
     display: flex;
     flex-direction: column;
-    font-size: 14px; /* Smaller font size to fit all items */
-    overflow-y: auto; /* Enable vertical scrollbar */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on Chrome */
+    font-size: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 14px; /* Adjusted font size */
+    font-size: 14px;
     color: #333;
     display: block;
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .sidebar a:hover {
@@ -68,8 +76,8 @@ body {
 
 /* Main content area */
 main {
-    margin-left: 220px; /* Adjust based on the width of the sidebar */
-    padding: 60px 20px 20px 20px; /* Adding padding to top to account for fixed top navigation */
+    margin-left: 220px;
+    padding: 60px 20px 20px 20px;
 }
 
 .container {
@@ -86,13 +94,12 @@ main {
 .section {
     margin-bottom: 20px;
     padding: 15px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #0056b3 100%); /* Gradient background */
+    background: linear-gradient(135deg, #f8f9fa 0%, #0056b3 100%);
     color: #333;
     border: 1px solid #e0e0e0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Typography */
 h1, h2 {
