@@ -216,3 +216,70 @@ footer {
 .close:focus {
   color: #bbb;
 }
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  /* Top Navigation */
+  .top-nav {
+    flex-wrap: wrap;            /* Allow wrapping for links */
+    text-align: center;         /* Center-align links */
+  }
+
+  .top-nav a {
+    padding: 10px 5px;          /* Reduce padding for smaller screens */
+    font-size: 0.9rem;          /* Slightly smaller font */
+  }
+
+  /* Sidebar */
+  .sidebar {
+    position: static;           /* Make it part of the flow on mobile */
+    width: 100%;                /* Full width on mobile */
+    border-right: none;         /* Remove border */
+    padding: 10px;              /* Reduce padding */
+  }
+
+  .link-container a {
+    padding: 10px 0;            /* Reduce link padding */
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Main Content */
+  .container {
+    margin: 0;                  /* No margin on smaller screens */
+    padding: 10px;              /* Smaller padding */
+  }
+
+  /* Footer */
+  footer {
+    font-size: 0.9rem;          /* Slightly smaller font for footer */
+    padding: 15px 10px;         /* Adjust padding */
+  }
+
+  /* Back to Top Button */
+  #backToTopBtn {
+    bottom: 10px;               /* Adjust position */
+    right: 10px;                /* Keep it in a visible corner */
+    left: auto;                 /* Reset left alignment */
+    transform: none;            /* Remove centering */
+    padding: 8px 12px;          /* Smaller button size */
+    font-size: 0.9rem;          /* Smaller font */
+  }
+
+  /* Images (Zoomable Thumbnails) */
+  .zoom-img {
+    width: 100%;                /* Full width of the container */
+    max-width: 300px;           /* Cap the size */
+    margin: 10px auto;          /* Center align thumbnails */
+  }
+
+  /* Sections */
+  .section {
+    margin-bottom: 20px;        /* Reduce spacing between sections */
+    padding: 15px;              /* Smaller padding */
+  }
+
+  /* Modal (Fullscreen Adjustments) */
+  .modal-content {
+    max-width: 95%;             /* Reduce size slightly for mobile */
+    max-height: 90vh;           /* Ensure it fits vertically */
+  }
+}
