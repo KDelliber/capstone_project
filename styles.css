@@ -100,11 +100,11 @@ main {
 }
 
 .container {
-    background: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    border-top: 5px solid #0056b3;
+    /* Shifts everything within .container half an inch to the right */
+    margin-left: 0.5in;
+    /* or you could use padding for a similar effect, like:
+    padding-left: 0.5in;
+    */
 }
 
 /* Box Styles */
