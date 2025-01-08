@@ -43,22 +43,22 @@ body {
     top: 50px;
     left: 0;
     background-color: #f8f9fa;
-    padding-top: 20px;
-    overflow-y: auto;
-    font-size: 14px;
+    padding-top: 10px; /* Reduced padding at the top */
+    overflow-y: hidden; /* Hide overflow to remove scrollbar */
+    font-size: 12px; /* Smaller font size */
 }
 
 .sidebar .link-container {
-    padding: 10px;
+    padding: 5px; /* Reduced padding */
 }
 
 .sidebar a {
     display: block;
-    padding: 10px 15px;
+    padding: 5px 10px; /* Smaller padding */
     text-decoration: none;
     color: #333;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 12px; /* Smaller font size */
+    margin-bottom: 3px; /* Reduced spacing between links */
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -66,6 +66,13 @@ body {
 }
 
 .sidebar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Focus Styles for Accessibility */
+.sidebar a:focus {
+    outline: 2px solid #0056b3;
     background-color: #ddd;
     color: black;
 }
