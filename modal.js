@@ -1,83 +1,53 @@
-document.addEventListener('DOMContentLoaded', () => {
-  /**
-   * =============================
-   *  Image Modal (Lightbox) Logic
-   * =============================
-   * This expects your HTML to have:
-   *   <div id="myModal" class="modal">
-   *     <span class="close">&times;</span>
-   *     <img class="modal-content" id="imgModal">
-   *     <div id="caption"></div>
-   *   </div>
-   *
-   * And images with the class="zoom-img", e.g.:
-   *   <img src="example.jpg" alt="Example" class="zoom-img">
-   *
-   * If you don’t use a modal or .zoom-img images, you can remove this section.
-   */
-
-  const modal = document.getElementById('myModal');
-  const modalImg = document.getElementById('imgModal');
-  const captionText = document.getElementById('caption');
-  const closeBtn = document.getElementsByClassName('close')[0];
-
-  // Check if modal elements exist (in case not on every page)
-  if (modal && modalImg && captionText && closeBtn) {
-    // For each clickable image
-    document.querySelectorAll('.zoom-img').forEach(function(img) {
-      img.addEventListener('click', function() {
-        modal.style.display = 'block';
-        modalImg.src = this.src;           // Set modal image to the clicked image
-        captionText.innerHTML = this.alt;  // Set caption to alt text of clicked image
-      });
-    });
-
-    // Close the modal on "X" click
-    closeBtn.onclick = function() {
-      modal.style.display = 'none';
-    };
-
-    // Optional: Close the modal if user clicks outside the image
-    modal.addEventListener('click', function(e) {
-      if (e.target === modal) {
-        modal.style.display = 'none';
-      }
-    });
-  }
-
-  /**
-   * ============================
-   *  "Back to Top" Button Logic
-   * ============================
-   * Expects a button:
-   *   <button id="backToTopBtn">Back to Top</button>
-   * in your HTML (usually in the footer).
-   * 
-   * This code:
-   *   - Shows the button when scrolling beyond 300px from top
-   *   - Smooth scrolls back to top when clicked
-   */
-
-  const backToTopBtn = document.getElementById('backToTopBtn');
-
-  // Check if the button exists (in case not on every page)
-  if (backToTopBtn) {
-    // Show/hide button based on scroll position
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 300) {
-        backToTopBtn.style.display = 'block';
-      } else {
-        backToTopBtn.style.display = 'none';
-      }
-    });
-
-    // Smooth scroll to top on click
-    backToTopBtn.addEventListener('click', function() {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
-    });
-  }
-
-});
+ 1  document.addEventListener('DOMContentLoaded', () => {
+ 2    // ================
+ 3    // Image Modal Logic
+ 4    // ================
+ 5    const modal = document.getElementById('myModal');
+ 6    const modalImg = document.getElementById('imgModal');
+ 7    const captionText = document.getElementById('caption');
+ 8    const closeBtn = document.getElementsByClassName('close')[0];
+ 9
+10    if (modal && modalImg && captionText && closeBtn) {
+11      // For each clickable image
+12      document.querySelectorAll('.zoom-img').forEach(function(img) {
+13        img.addEventListener('click', function() {
+14          modal.style.display = 'block';
+15          modalImg.src = this.src;
+16          captionText.innerHTML = this.alt;
+17        });
+18      });
+19
+20      // Close modal on X click
+21      closeBtn.onclick = function() {
+22        modal.style.display = 'none';
+23      };
+24
+25      // Close modal if user clicks outside the image
+26      modal.addEventListener('click', function(e) {
+27        if (e.target === modal) {
+28          modal.style.display = 'none';
+29        }
+30      });
+31    }
+32
+33    // ========================
+34    // "Back to Top" Logic
+35    // ========================
+36    const backToTopBtn = document.getElementById('backToTopBtn');
+37    if (backToTopBtn) {
+38      window.addEventListener('scroll', function() {
+39        if (window.scrollY > 300) {
+40          backToTopBtn.style.display = 'block';
+41        } else {
+42          backToTopBtn.style.display = 'none';
+43        }
+44      });
+45
+46      backToTopBtn.addEventListener('click', function() {
+47        window.scrollTo({
+48          top: 0,
+49          behavior: 'smooth'
+50        });
+51      });
+52    }
+53  });
