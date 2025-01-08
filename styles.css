@@ -79,6 +79,9 @@ html, body {
 
 main {
   flex: 1;
+  margin-top: 60px; /* Accounts for the fixed top navigation */
+  margin-left: 220px; /* Accounts for the fixed sidebar */
+  padding: 20px;
 }
 
 .section {
