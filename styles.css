@@ -1,11 +1,9 @@
 /* Remove sticky footer flex approach since we’re switching to fixed nav & sidebar */
 html, body {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  height: 100%;  /* optional if you want 100% height behavior */
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 /* 
@@ -123,7 +121,6 @@ footer {
   padding: 10px 20px;
   text-align: center;
   border-top: 5px solid #004080;
-  /* Not fixed, so it appears after content. */
 }
 
 /* 
