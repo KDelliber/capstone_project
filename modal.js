@@ -29,3 +29,24 @@ modal.addEventListener('click', function(e) {
     modal.style.display = 'none';
   }
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTopBtn = document.getElementById('backToTopBtn');
+
+  // Toggle button visibility based on scroll position
+  window.addEventListener('scroll', function() {
+    // If scrolled more than 300px from top, show it; otherwise hide it
+    if (window.scrollY > 300) {
+      backToTopBtn.style.display = 'block';
+    } else {
+      backToTopBtn.style.display = 'none';
+    }
+  });
+
+  // Smooth scroll to top on button click
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
