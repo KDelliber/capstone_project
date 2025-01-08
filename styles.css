@@ -218,16 +218,23 @@ footer {
 }
 /* Responsive adjustments for mobile devices */
 @media (max-width: 768px) {
-  /* Top Navigation */
+  /* Fix for top navigation */
   .top-nav {
-    flex-wrap: wrap;            /* Allow wrapping for links */
-    text-align: center;         /* Center-align links */
+    position: relative; /* Ensure it doesn't overlap content */
+    text-align: center; /* Center align for better spacing */
   }
 
   .top-nav a {
-    padding: 10px 5px;          /* Reduce padding for smaller screens */
-    font-size: 0.9rem;          /* Slightly smaller font */
+    display: block;    /* Stack links vertically */
+    padding: 10px 0;   /* Add more spacing for touch-friendly links */
   }
+
+  /* Prevent content from being cut off */
+  main {
+    margin-top: 60px; /* Adjust based on your nav height */
+  }
+}
+
 
   /* Sidebar */
   .sidebar {
