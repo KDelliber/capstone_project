@@ -1,15 +1,32 @@
-/* GLOBAL RESETS & BODY */
+/* GLOBAL RESET & BODY SETUP */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* 
+  Make the body a flex container so we can pin the footer at the bottom
+  even on short pages.
+*/
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
   color: #333;
+
+  /* Sticky footer trick */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+/* 
+  main will flex to fill available space, ensuring 
+  the footer is pushed down if content is taller than the viewport.
+*/
+main {
+  flex: 1; 
 }
 
 /* NAVIGATION */
@@ -39,7 +56,9 @@ body {
   float: left;
   background-color: #efefef;
   border-right: 2px solid #ccc;
-  min-height: 100vh; /* Adjust as needed */
+
+  /* Removed fixed height so it can grow with content */
+  min-height: auto;
   padding: 20px 0;
 }
 
@@ -62,7 +81,8 @@ body {
 
 /* MAIN CONTAINER & SECTIONS */
 .container {
-  margin-left: 220px; /* Accounts for the sidebar width (200px) + some spacing */
+  /* Account for the 200px sidebar, add some extra spacing */
+  margin-left: 220px;
   padding: 20px;
 }
 
@@ -79,9 +99,8 @@ body {
   color: #0056b3;
 }
 
-/* FOOTER */
+/* FOOTER (STICKY AT BOTTOM) */
 footer {
-  clear: both;
   background-color: #0056b3;
   color: white;
   padding: 10px 20px;
@@ -91,27 +110,30 @@ footer {
 
 /* MODAL / LIGHTBOX STYLES */
 .zoom-img {
-  width: 300px;       /* Adjust as desired (e.g., 300px, 400px, etc.) */
-  max-width: 100%;    /* Responsive on smaller screens */
+  /* Now images are 50% width for easier viewing */
+  width: 50%; 
+  max-width: 800px;   /* optional: cap how large they get */
   height: auto;
-  cursor: zoom-in;    
+  cursor: zoom-in;
   margin-bottom: 1rem;
   border: 2px solid #ccc;
   border-radius: 4px;
 }
 
+/* Modal Overlay */
 .modal {
-  display: none;              /* Hidden by default */
-  position: fixed;
-  z-index: 999;
+  display: none; 
+  position: fixed; 
+  z-index: 999; 
   left: 0; 
   top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;             /* Enables scrolling if content is tall */
-  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* Enlarged Image in the Modal */
 .modal-content {
   margin: auto;
   display: block;
@@ -119,9 +141,10 @@ footer {
   height: auto;
   border: 3px solid #fff;
   border-radius: 4px;
-  margin-top: 60px;           /* Provide some top padding from the viewport */
+  margin-top: 60px; 
 }
 
+/* Caption Text in Modal */
 #caption {
   margin: 20px auto 0;
   display: block;
@@ -131,6 +154,7 @@ footer {
   font-size: 1.1rem;
 }
 
+/* Close Button (X) */
 .close {
   position: absolute;
   top: 20px;
