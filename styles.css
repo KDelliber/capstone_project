@@ -169,14 +169,15 @@ footer {
 }
 
 .modal-content {
-  max-width: 90%; /* Image will scale to fit within 90% of the viewport width */
-  height: auto;   /* Maintain aspect ratio */
+  max-width: 100%;  /* Allow the image to stretch across the entire viewport width */
+  max-height: 100vh; /* Scale the image to fit the viewport height */
+  width: auto;      /* Maintain aspect ratio */
+  height: auto;     /* Maintain aspect ratio */
   margin: auto;
   display: block;
-  border: 3px solid #fff;
-  border-radius: 4px;
+  border: 3px solid #fff; /* Optional border around the image */
+  border-radius: 4px;     /* Optional rounded corners */
 }
-
 #caption {
   margin: 20px auto 0;
   display: block;
