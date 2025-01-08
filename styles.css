@@ -1,4 +1,15 @@
-/* Global Reset */
+/* 
+ * -------------------------
+ *  GLOBAL RESET & BODY
+ * -------------------------
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -6,7 +17,24 @@ html, body {
   flex-direction: column;
 }
 
-/* Top Navigation */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Main content takes up remaining space */
+main {
+  flex: 1;
+}
+
+/* 
+ * -------------------------
+ *  TOP NAVIGATION BAR
+ * -------------------------
+ */
+
 .top-nav {
   position: fixed;
   top: 0;
@@ -32,7 +60,12 @@ html, body {
   background-color: #004080;
 }
 
-/* Sidebar */
+/* 
+ * -------------------------
+ *  SIDEBAR
+ * -------------------------
+ */
+
 .sidebar {
   position: fixed;
   top: 60px;
@@ -70,17 +103,15 @@ html, body {
   border-bottom: none;
 }
 
-/* Main Content */
-.container {
-  margin-top: 60px;
-  margin-left: 220px;
-  padding: 20px;
-}
+/* 
+ * -------------------------
+ *  MAIN CONTENT
+ * -------------------------
+ */
 
-main {
-  flex: 1;
-  margin-top: 60px; /* Accounts for the fixed top navigation */
-  margin-left: 220px; /* Accounts for the fixed sidebar */
+.container {
+  margin-top: 60px;  /* Push below the top navigation */
+  margin-left: 220px; /* Push right of the sidebar */
   padding: 20px;
 }
 
@@ -97,7 +128,12 @@ main {
   color: #0056b3;
 }
 
-/* Footer */
+/* 
+ * -------------------------
+ *  FOOTER
+ * -------------------------
+ */
+
 footer {
   background-color: #0056b3;
   color: white;
@@ -106,7 +142,12 @@ footer {
   border-top: 5px solid #004080;
 }
 
-/* Back to Top Button */
+/* 
+ * -------------------------
+ *  "BACK TO TOP" BUTTON
+ * -------------------------
+ */
+
 #backToTopBtn {
   display: none;
   position: fixed;
@@ -128,7 +169,12 @@ footer {
   background-color: #004080;
 }
 
-/* Modal */
+/* 
+ * -------------------------
+ *  MODAL / LIGHTBOX
+ * -------------------------
+ */
+
 .zoom-img {
   width: 150px;
   height: auto;
@@ -185,62 +231,94 @@ footer {
   color: #bbb;
 }
 
-/* Responsive Adjustments */
+/* 
+ * -------------------------
+ *  RESPONSIVE DESIGN
+ * -------------------------
+ */
+
 @media (max-width: 768px) {
+  /* Top Navigation */
   .top-nav {
-    flex-wrap: wrap;
-    text-align: center;
+    position: fixed;       /* Keep it fixed at the top */
+    width: 100%;           /* Ensure it spans the full width */
+    z-index: 9999;         /* Stay above other elements */
+    text-align: center;    /* Center-align links */
+    background-color: #0056b3;
+    border-bottom: 5px solid #004080;
   }
 
   .top-nav a {
-    display: block;
-    padding: 10px 0;
-    font-size: 0.9rem;
+    display: block;        /* Stack links vertically */
+    padding: 10px;         /* Add touch-friendly padding */
+    font-size: 0.9rem;     /* Slightly smaller font for mobile */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
   }
 
+  .top-nav a:hover {
+    background-color: #004080;
+  }
+
+  /* Sidebar */
   .sidebar {
-    position: static;
-    width: 100%;
+    position: static;      /* Sidebar flows with content */
+    width: 100%;           /* Full width on mobile */
+    margin-bottom: 20px;   /* Add spacing below the sidebar */
     padding: 10px;
-    border-right: none;
+    border: none;          /* Remove border */
   }
 
   .link-container a {
-    padding: 10px 0;
+    padding: 10px;         /* Add touch-friendly padding */
+    font-size: 0.9rem;     /* Adjust font size */
+    border-bottom: 1px solid #ccc;
   }
 
+  /* Prevent main content from overlapping nav */
+  main {
+    margin-top: 60px;      /* Same as the height of the navigation bar */
+  }
+
+  /* Adjust main container for mobile */
   .container {
-    margin: 0;
-    padding: 10px;
+    margin: 0;             /* Remove large margins */
+    padding: 10px;         /* Add some padding */
   }
 
-  footer {
-    font-size: 0.9rem;
-    padding: 15px 10px;
-  }
-
-  #backToTopBtn {
-    bottom: 10px;
-    right: 10px;
-    left: auto;
-    transform: none;
-    padding: 8px 12px;
-    font-size: 0.9rem;
-  }
-
-  .zoom-img {
-    width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
-  }
-
+  /* Sections */
   .section {
-    margin-bottom: 20px;
-    padding: 15px;
+    margin-bottom: 20px;   /* Reduce spacing between sections */
+    padding: 15px;         /* Smaller padding */
   }
 
+  /* Footer */
+  footer {
+    font-size: 0.9rem;     /* Slightly smaller font */
+    padding: 15px 10px;    /* Adjust padding */
+  }
+
+  /* Back to Top Button */
+  #backToTopBtn {
+    bottom: 10px;          /* Adjust position */
+    right: 10px;           /* Move to bottom-right corner */
+    left: auto;            /* Reset left alignment */
+    transform: none;       /* Remove centering transformation */
+    padding: 8px 12px;     /* Smaller button size */
+    font-size: 0.9rem;     /* Smaller font size */
+  }
+
+  /* Zoomable images */
+  .zoom-img {
+    width: 100%;           /* Full width of the container */
+    max-width: 300px;      /* Cap the size */
+    margin: 10px auto;     /* Center-align thumbnails */
+  }
+
+  /* Modal Content */
   .modal-content {
-    max-width: 95%;
-    max-height: 90vh;
+    max-width: 95%;        /* Scale modal image to fit smaller screens */
+    max-height: 90vh;      /* Ensure it fits vertically */
   }
 }
