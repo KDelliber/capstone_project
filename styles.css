@@ -92,7 +92,9 @@ html, body {
   margin-left: 220px;  /* push right of 200px sidebar + 20px gap */
   padding: 20px;
 }
-
+main {
+  flex: 1; /* Fills the vertical space between the top nav and footer */
+}
 /* 
   4) Sections 
 */
@@ -121,6 +123,7 @@ footer {
   padding: 10px 20px;
   text-align: center;
   border-top: 5px solid #004080;
+  flex-shrink: 0;
 }
 
 /* 
