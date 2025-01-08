@@ -169,13 +169,12 @@ footer {
 }
 
 .modal-content {
+  max-width: 90%; /* Image will scale to fit within 90% of the viewport width */
+  height: auto;   /* Maintain aspect ratio */
   margin: auto;
   display: block;
-  max-width: 80%;
-  height: auto;
   border: 3px solid #fff;
   border-radius: 4px;
-  margin-top: 60px;
 }
 
 #caption {
