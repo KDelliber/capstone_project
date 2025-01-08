@@ -240,3 +240,24 @@ footer {
 #backToTopBtn:hover {
   background-color: #004080;
 }
+.top-nav {
+  display: flex;
+  justify-content: flex-start; /* or space-around, etc. */
+  align-items: center;
+  background-color: #0056b3;
+  border-bottom: 5px solid #004080;
+}
+
+.top-nav a {
+  /* remove float */
+  float: none;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-nav a:hover {
+  background-color: #004080;
+}
