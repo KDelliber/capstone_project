@@ -69,6 +69,20 @@ html, body {
 .link-container a:hover {
   text-decoration: underline;
 }
+.link-container a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;            /* Ensure each link takes up the full width */
+  padding: 10px 15px;        /* Add spacing inside the links */
+  border-bottom: 1px solid #ccc; /* Add the divider line */
+  margin: 0 10px;            /* Prevent the line from reaching the edges */
+}
+
+/* Remove the line for the last link */
+.link-container a:last-child {
+  border-bottom: none;
+}
 
 /* 
   3) Main Content
