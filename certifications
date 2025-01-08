@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Certifications earned by Kenneth Delliber."/>
+  <meta name="keywords" content="Kenneth Delliber, certifications, IT, A+, Net+, TestOut, YTI Career Institute"/>
+  <title>Certifications</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <div class="top-nav">
+      <a href="index.html">Home</a>
+      <a href="about_me.html">About Me</a>
+      <a href="capstone_project.html">Capstone Project</a>
+      <a href="contact.html">Contact</a>
+      <!-- Add a link to this new Certifications page in the rest of your site’s pages as well -->
+      <a href="certifications.html">Certifications</a>
+  </div>
+
+  <main>
+    <div class="container">
+      <section id="certifications" class="section">
+        <h1>Certifications</h1>
+        
+        <!-- A+ -->
+        <div class="cert-item">
+          <h2>CompTIA A+</h2>
+          <img src="Certs/A+.jpg" alt="CompTIA A+ Certification" style="max-width: 300px; height: auto;">
+          <p>Core certification demonstrating foundational IT knowledge and skills.</p>
+        </div>
+
+        <!-- Net+ -->
+        <div class="cert-item">
+          <h2>CompTIA Network+</h2>
+          <img src="Certs/Net+.jpeg" alt="CompTIA Network+ Certification" style="max-width: 300px; height: auto;">
+          <p>Validates essential networking concepts like configuration and troubleshooting.</p>
+        </div>
+
+        <!-- Associate's Degree -->
+        <div class="cert-item">
+          <h2>Associate Degree in Specialized Technology</h2>
+          <img src="Certs/associates.jpg" alt="Associate Degree from YTI Career Institute" style="max-width: 300px; height: auto;">
+          <p>Computer and Data Management curriculum from YTI Career Institute.</p>
+        </div>
+
+        <!-- TestOut Linux Pro -->
+        <div class="cert-item">
+          <h2>TestOut Linux Pro</h2>
+          <img src="Certs/linuxpro.jpeg" alt="TestOut Linux Pro Certification" style="max-width: 300px; height: auto;">
+          <p>Hands-on certification covering Linux installation, management, and configuration.</p>
+        </div>
+
+        <!-- TestOut Network Pro -->
+        <div class="cert-item">
+          <h2>TestOut Network Pro</h2>
+          <img src="Certs/networkpro.jpg" alt="TestOut Network Pro Certification" style="max-width: 300px; height: auto;">
+          <p>Practical network skills including routing, switching, and network security.</p>
+        </div>
+
+        <!-- TestOut Office Pro -->
+        <div class="cert-item">
+          <h2>TestOut Office Pro</h2>
+          <img src="Certs/officepro.jpg" alt="TestOut Office Pro Certification" style="max-width: 300px; height: auto;">
+          <p>Demonstrates proficiency in Microsoft Office productivity tools.</p>
+        </div>
+
+        <!-- Porter and Chester Institute Certificate -->
+        <div class="cert-item">
+          <h2>Computer Network Technologies Certificate</h2>
+          <img src="Certs/pcicert.jpg" alt="Computer Network Technologies Certificate from Porter and Chester Institute" style="max-width: 300px; height: auto;">
+          <p>Focused training in computer networking and system maintenance.</p>
+        </div>
+
+        <!-- TestOut PC Pro -->
+        <div class="cert-item">
+          <h2>TestOut PC Pro</h2>
+          <img src="Certs/pcpro.jpg" alt="TestOut PC Pro Certification" style="max-width: 300px; height: auto;">
+          <p>PC hardware, software, and troubleshooting fundamentals.</p>
+        </div>
+
+        <!-- TestOut Security Pro -->
+        <div class="cert-item">
+          <h2>TestOut Security Pro</h2>
+          <img src="Certs/securitypro.jpg" alt="TestOut Security Pro Certification" style="max-width: 300px; height: auto;">
+          <p>Validates knowledge of cybersecurity principles and best practices.</p>
+        </div>
+
+        <!-- Unofficial Transcript (Optional) -->
+        <!-- If you’d like to show your 4.0 GPA, you can either include the transcript or mention it elsewhere. -->
+        <!-- Example: 
+        <div class="cert-item">
+          <h2>Unofficial Transcript</h2>
+          <a href="Certs/unofficial_transcript.pdf" target="_blank">View Transcript</a>
+          <p>Completed my degree with a 4.0 GPA.</p>
+        </div>
+        -->
+      </section>
+    </div>
+  </main>
+
+  <footer style="background-color: #0056b3; color: white; padding: 10px 20px; text-align: center; border-top: 5px solid #004080;">
+    <p>&copy; 2025 Kenneth Delliber. All rights reserved.</p>
+    <p>
+      <a href="contact.html" style="color: #ffd700; text-decoration: none;">Contact Me</a>
+    </p>
+  </footer>
+</body>
+</html>
