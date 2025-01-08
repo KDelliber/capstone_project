@@ -93,9 +93,10 @@ body {
 
 /* Main content area */
 main {
-    margin: 60px auto 20px auto;
+    margin: 60px auto 20px 220px; /* Added left margin to accommodate sidebar */
     padding: 20px;
     max-width: 800px;
+    min-height: calc(100vh - 120px); /* Ensure main content takes up at least the full height of the viewport */
 }
 
 .container {
