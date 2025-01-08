@@ -1,35 +1,50 @@
-/* GLOBAL RESET & BODY SETUP */
+/* 
+ * -------------------------
+ *  1) GLOBAL RESET & BODY
+ * -------------------------
+ */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* 
-  Make the body a flex container so we can pin the footer at the bottom
-  even on short pages.
-*/
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f8f8f8;
   color: #333;
 
-  /* Sticky footer trick */
+  /* 
+    Sticky footer trick:
+    Makes the body a flex container. 
+    We'll allow the main content to flex (grow) 
+    and push the footer down if needed.
+  */
   display: flex;
   flex-direction: column;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 /* 
-  main will flex to fill available space, ensuring 
-  the footer is pushed down if content is taller than the viewport.
-*/
+ * main takes up all remaining space so footer 
+ * sits at bottom on short pages. 
+ */
 main {
-  flex: 1; 
+  flex: 1;
 }
 
-/* NAVIGATION */
+/* 
+ * -------------------------
+ *  2) NAVIGATION BAR
+ * -------------------------
+ */
+
 .top-nav {
   background-color: #0056b3;
   overflow: hidden;
@@ -50,25 +65,31 @@ main {
   background-color: #004080;
 }
 
-/* SIDEBAR */
+/* 
+ * -------------------------
+ *  3) SIDEBAR & LAYOUT
+ * -------------------------
+ */
+
 .sidebar {
   width: 200px;
   float: left;
   background-color: #efefef;
   border-right: 2px solid #ccc;
 
-  /* Removed fixed height so it can grow with content */
-  min-height: auto;
+  /* We remove fixed heights so it can grow with content. */
   padding: 20px 0;
 }
 
+/* This container for the links inside the sidebar. */
 .link-container {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 20px; /* Left indentation for links */
+  padding-left: 20px;
 }
 
+/* Sidebar links styling */
 .link-container a {
   color: #0056b3;
   text-decoration: none;
@@ -79,12 +100,19 @@ main {
   text-decoration: underline;
 }
 
-/* MAIN CONTAINER & SECTIONS */
+/* 
+ * .container for the main content, accounting for the sidebar width. 
+ */
 .container {
-  /* Account for the 200px sidebar, add some extra spacing */
-  margin-left: 220px;
+  margin-left: 220px; /* 200px sidebar + 20px offset */
   padding: 20px;
 }
+
+/* 
+ * -------------------------
+ *  4) SECTION STYLES
+ * -------------------------
+ */
 
 .section {
   margin-bottom: 40px;
@@ -99,20 +127,32 @@ main {
   color: #0056b3;
 }
 
-/* FOOTER (STICKY AT BOTTOM) */
+/* 
+ * -------------------------
+ *  5) FOOTER
+ * -------------------------
+ */
+
 footer {
   background-color: #0056b3;
   color: white;
   padding: 10px 20px;
   text-align: center;
   border-top: 5px solid #004080;
+  /* No special positioning needed since we handle sticky footer via flex in body */
 }
 
-/* MODAL / LIGHTBOX STYLES */
+/* 
+ * -------------------------
+ *  6) MODAL / LIGHTBOX
+ *    (Only if you have zoomable images)
+ * -------------------------
+ */
+
+/* Images that can be clicked to zoom */
 .zoom-img {
-  /* Now images are 50% width for easier viewing */
-  width: 50%; 
-  max-width: 800px;   /* optional: cap how large they get */
+  width: 50%;        /* or 300px, 400px, etc. Adjust to preference */
+  max-width: 800px;  /* optional cap for huge images */
   height: auto;
   cursor: zoom-in;
   margin-bottom: 1rem;
@@ -120,20 +160,21 @@ footer {
   border-radius: 4px;
 }
 
-/* Modal Overlay */
+/* The modal container, hidden by default. 
+   We'll show it with JavaScript upon clicking a .zoom-img */
 .modal {
   display: none; 
   position: fixed; 
-  z-index: 999; 
+  z-index: 999;
   left: 0; 
   top: 0;
-  width: 100%; 
-  height: 100%; 
+  width: 100%;
+  height: 100%;
   overflow: auto; 
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Enlarged Image in the Modal */
+/* The enlarged image inside the modal */
 .modal-content {
   margin: auto;
   display: block;
@@ -141,10 +182,10 @@ footer {
   height: auto;
   border: 3px solid #fff;
   border-radius: 4px;
-  margin-top: 60px; 
+  margin-top: 60px;
 }
 
-/* Caption Text in Modal */
+/* Caption text in the modal */
 #caption {
   margin: 20px auto 0;
   display: block;
@@ -154,7 +195,7 @@ footer {
   font-size: 1.1rem;
 }
 
-/* Close Button (X) */
+/* Close button (X) in the top-right corner of the modal */
 .close {
   position: absolute;
   top: 20px;
@@ -165,13 +206,26 @@ footer {
   cursor: pointer;
   transition: 0.3s;
 }
+.close:hover,
+.close:focus {
+  color: #bbb;
+}
 
-/* "Back to Top" button (initially hidden) */
+/* 
+ * -------------------------
+ *  7) "Back to Top" BUTTON
+ * -------------------------
+ */
+
+/* 
+ * Hidden by default; 
+ * We'll show it once scrolling is more than 300px in modal.js
+ */
 #backToTopBtn {
-  display: none;              /* hidden by default */
-  position: fixed;            /* stay in bottom-right, regardless of scroll */
-  bottom: 20px;               /* adjust spacing from bottom */
-  right: 20px;                /* adjust spacing from right */
+  display: none;   /* hidden by default */
+  position: fixed; /* pinned in the viewport */
+  bottom: 20px;
+  right: 20px;
   padding: 10px 16px;
   background-color: #0056b3;
   color: #fff;
@@ -180,15 +234,9 @@ footer {
   cursor: pointer;
   font-weight: bold;
   font-size: 1rem;
-  z-index: 9999;              /* ensure it's on top of other elements */
+  z-index: 9999;   /* on top of other elements */
 }
 
 #backToTopBtn:hover {
   background-color: #004080;
-}
-
-
-.close:hover,
-.close:focus {
-  color: #bbb;
 }
