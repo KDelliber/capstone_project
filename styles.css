@@ -146,14 +146,15 @@ footer {
   7) Modal / Lightbox (same as before)
 */
 .zoom-img {
-  width: 50%;
-  max-width: 800px;
-  height: auto;
-  cursor: zoom-in;
+  width: 150px;        /* Thumbnail width (adjust to your preference) */
+  height: auto;        /* Maintain aspect ratio */
+  cursor: zoom-in;     /* Indicates the image is clickable */
   margin-bottom: 1rem;
   border: 2px solid #ccc;
-  border-radius: 4px;
+  border-radius: 4px;  /* Optional: rounded corners */
+  display: inline-block; /* Ensures proper layout for multiple thumbnails */
 }
+
 
 .modal {
   display: none;
