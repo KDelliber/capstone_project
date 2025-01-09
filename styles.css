@@ -288,3 +288,12 @@ footer a:hover {
     overflow: hidden; /* Prevent overflow of shapes */
     background-color: #efefef; /* Match sidebar background */
 }
+.zoom-img {
+    width: 150px; /* Adjust width to a smaller thumbnail size */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Indicates the image is clickable */
+    margin-bottom: 1rem;
+    border: 2px solid #ccc; /* Optional border for styling */
+    border-radius: 4px; /* Optional rounded corners */
+    display: block; /* Ensure proper layout */
+}
